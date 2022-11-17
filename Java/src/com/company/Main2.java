@@ -11,6 +11,7 @@ public class Main2 {
         String str = "Hello";
         boolean isTrue = true;
 
+
         System.out.println(number);
         System.out.println(number2);
         System.out.println(number3);
