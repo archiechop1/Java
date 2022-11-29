@@ -12,6 +12,7 @@ public class Main25 {
             range++;
             if (range>3){
                 break;
+
             }
         }
     }
