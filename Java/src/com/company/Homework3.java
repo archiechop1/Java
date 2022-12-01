@@ -11,6 +11,7 @@ public class Homework3 {
         for (int i = numbers.length - 1; i > -1; i--) {
             another[count] = numbers[i];
             count++;
+            
         }
 
 
