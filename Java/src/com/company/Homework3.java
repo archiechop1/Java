@@ -12,6 +12,8 @@ public class Homework3 {
             another[count] = numbers[i];
             count++;
 
+
+
         }
 
 
