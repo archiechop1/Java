@@ -10,6 +10,5 @@ public class Homework4 {
         int min = numbers[0];
         System.out.println("Maximum number is: " + max);
         System.out.println("Minimum number is: " + min);
-
     }
 }
