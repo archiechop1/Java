@@ -20,9 +20,11 @@ public class Reader {
             String line;
             int countLetter;
             int countWords;
+            int totalLetters;
             while ((line=file.readLine()) !=null){
                 countLetter = 0;
                 countWords =0;
+                totalLetters=0;
                 array = line.split(" ");
                 for(int i=0; i< array.length; i++){
                     array[i] = Character.toUpperCase(array[i].charAt(0)) + array[i].substring(1);
@@ -38,10 +40,15 @@ public class Reader {
                 for (String element : array){
                     countWords++;
                 }
-
+                for (int i=0; i<line.length(); i++){
+                    if (line.charAt(i) != ' '){
+                    }
+                    totalLetters++;
+                }
 
                 System.out.println("Letter " + letter+ " seems "+countLetter+ " time(s)");
                 System.out.println("Total words: "+countWords);
+                System.out.println("Total letters: " +totalLetters);
             }
         }catch(Exception e){
             System.out.println("Some error "+e);
