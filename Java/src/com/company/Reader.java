@@ -41,9 +41,10 @@ public class Reader {
                     countWords++;
                 }
                 for (int i=0; i<line.length(); i++){
-                    if (line.charAt(i) != ' '){
+                    if (line.charAt(i) != ' ' && line.charAt(i) != ','){
+                        totalLetters++;
                     }
-                    totalLetters++;
+
                 }
 
                 System.out.println("Letter " + letter+ " seems "+countLetter+ " time(s)");
