@@ -1,17 +1,25 @@
 package com.company;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main22 {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 7, 5, 6, 7, 8, 9, 10, 7, 30};
-        int num = 7;
-        int num2 = 3;
-        for (int i = 0; i < array.length; i++) {
-        if (array[i] == num || array[i] == num2){
-            array[i] = array[i]*2;
+        String [] months = new String[] {"January", "February", "March", "April", "May",
+                "June", "July", "August", "September", "October", "November", "December"};
+        System.out.println("Please enter a month: ");
+        Scanner scn = new Scanner(System.in);
+        int month = scn.nextInt();
+        //sout(months[month-1]);
+        // if(month>0 && month<13){
+        // sout(months[month-1]);
+        //}else{
+        //sout("Try again!");
+
+        for (int i = 0; i<months.length; i++){
+            if (month == i+1){
+                System.out.println(months[i]);
+            }
         }
-        }
-        System.out.println(Arrays.toString(array));
+
     }
 }

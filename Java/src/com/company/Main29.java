@@ -1,32 +1,42 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class Main29 {
     public static void main(String[] args) {
-        int[] array = {2, 4, 6, 6, 8, 10, 10, -10,-10,-5};
-        Arrays.sort(array);
-        int someValue = array[0];
-        int count = 1;
-        for (int i = 0; i < array.length; i++) {
-            if (someValue < array[i]) {
-                someValue = array[i];
-                count++;
+        int[] array = {1, 2, 3, 4, 5};
+        int sum =0;
+        for (int i =0; i< array.length; i++){
+            sum+=array[i];
 
+
+        }
+        System.out.println(sum);
+
+        int i = 0;
+        int sum2=0;
+        while (true){
+            sum2+=array[i];
+            i++;
+            if (i== array.length){
+                break;
             }
         }
-        System.out.println(Arrays.toString(array));
-        int index = 1;
-        int[] array2 = new int[count];
-        array2[0] = array[0];
-        count = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (count<array[i]){
-                count = array[i];
-                array2[index]=array[i];
-                index++;
-            }
+        System.out.println(sum2);
+
+        int sum3=0;
+        for (int num: array){
+            sum3+=num;
         }
-        System.out.println(Arrays.toString(array2));
+        System.out.println(sum3);
+
+        IntStream elements = IntStream.of(array);
+        int sum4 = elements.sum();
+
+        System.out.println(sum4);
+
+        System.out.println(Arrays.stream(array).sum());
+
     }
 }

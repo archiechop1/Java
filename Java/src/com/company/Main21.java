@@ -1,14 +1,17 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main21 {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30};
-        int result = 0;
+        int[] array = {1, 2, 3, 7, 5, 6, 7, 8, 9, 10, 7, 30};
+        int num = 7;
+        int num2 = 3;
         for (int i = 0; i < array.length; i++) {
-            if (i > 2 && i< array.length-3 && i!=4)  {
-                result += array[i];
-            }
+        if (array[i] == num || array[i] == num2){
+            array[i] = array[i]*2;
         }
-        System.out.println(result);
+        }
+        System.out.println(Arrays.toString(array));
     }
 }

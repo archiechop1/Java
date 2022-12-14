@@ -2,14 +2,15 @@ package com.company;
 
 public class Main36 {
     public static void main(String[] args) {
-        try{
-            int x = 100/0;
-            int [] arr = {10,20,30};
-            System.out.println(arr[3]);
-        }catch(Exception e){
-            System.out.println("Some error "+e);
-        } finally {
-            System.out.println("Hello");
-        }
+        print();
+        print2("Alena");
+    }
+    public static void print(){
+        System.out.println("Hello world!");
+
+    }
+
+    public static void print2(String name){
+        System.out.println("Hello " + name);
     }
 }

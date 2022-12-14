@@ -1,18 +1,18 @@
 package com.company;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main33 {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        numbers.add(2);
-        numbers.add(4);
-        numbers.add(5);
-        numbers.add(8);
-        numbers.add(7);
+        String [] months = new String[] {"January", "February", "March", "April", "May",
+                "June", "July", "August", "September", "October", "November", "December"};
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Please enter  a month: ");
+        String month = scn.nextLine();
+        if (Arrays.asList(months).contains(month)){
+            System.out.println(Arrays.asList(months).indexOf(month) +1);
 
-        for (int i=0; i < numbers.size(); i++) {
-            System.out.println(numbers.get(i) + " ");
         }
     }
 }

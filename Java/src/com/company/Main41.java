@@ -1,12 +1,26 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main41 {
     public static void main(String[] args) {
-       cube(5);
-    }
-    public static int cube (int num){
-        int result = num*num*num;
-        System.out.println(result);
-        return result;
+        int length = 1000;
+        int[] prime = new int[length];
+        int n = 0;
+        boolean isTrue;
+        for (int i=2; n<length; i++){
+            isTrue = true;
+            for (int j = 2; j<i; j++) {
+                if (i % j == 0) {
+                    isTrue = false;
+                }
+            }
+                if(isTrue){
+                    prime[n] = i;
+                    n++;
+                }
+            }
+
+        System.out.println(Arrays.toString(prime));
     }
 }

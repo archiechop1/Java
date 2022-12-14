@@ -1,18 +1,15 @@
 package com.company;
 
-import java.util.Arrays;
-
 public class Main35 {
     public static void main(String[] args) {
-        String[] a = {"K","O", "ZH", "Z", "G", "S", "F"};
-        String temp;
-        int length = a.length;
-        for (int i = 0; i<length/2; i++){
-            temp = a[length-i-1];
-            a[length-i-1] = a[i];
-            a[i] = temp;
-
+        try{
+            int x = 100/0;
+            int [] arr = {10,20,30};
+            System.out.println(arr[3]);
+        }catch(Exception e){
+            System.out.println("Some error "+e);
+        } finally {
+            System.out.println("Hello");
         }
-        System.out.println(Arrays.toString(a));
     }
 }
