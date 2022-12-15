@@ -15,7 +15,7 @@ public class Homework5 {
         float Fahrenheit, Celsius;
         System.out.println("Please enter a temperature in Fahrenheit: ");
         Scanner scn = new Scanner(System.in);
-        Fahrenheit = scn.nextInt();
+        Fahrenheit = scn.nextFloat();
         Celsius = ((Fahrenheit - 32) * 5) / 9;
         float result = Celsius;
         System.out.println("The temperature in Celsius is " + result + " °C");
@@ -26,7 +26,7 @@ public class Homework5 {
         float Fahrenheit, Celsius;
         System.out.println("Please enter a temperature in Celsius: ");
         Scanner scn = new Scanner(System.in);
-        Celsius = scn.nextInt();
+        Celsius = scn.nextFloat();
         Fahrenheit = (Celsius * 9 / 5) + 32;
         float result = Fahrenheit;
         System.out.println("The temperature in Fahrenheit is " + result + " °F");
@@ -37,7 +37,7 @@ public class Homework5 {
         float miles, km;
         System.out.println("Please enter a distance in miles: ");
         Scanner scn = new Scanner(System.in);
-        miles = scn.nextInt();
+        miles = scn.nextFloat();
         km = miles * 1.609f;
         float result = km;
         System.out.println("The distance in kilometers is " + result + " km.");
@@ -48,7 +48,7 @@ public class Homework5 {
         float miles, km;
         System.out.println("Please enter a distance in kilometers: ");
         Scanner scn = new Scanner(System.in);
-        km = scn.nextInt();
+        km = scn.nextFloat();
         miles = km / 1.609f;
         float result = miles;
         System.out.println("The distance in miles is " + result + " miles.");

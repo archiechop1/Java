@@ -15,6 +15,19 @@ public class Main42 {
             }
         }
         System.out.println(Arrays.toString(prime));
+
+        int [] prime10 = new int[10];
+        int k = 0;
+        int i1000 = prime[999]*prime[999];
+        System.out.println(i1000);
+        for(int i = i1000; k<prime10.length; i++){
+            if (checkprime(i)){
+                prime10[k]=i;
+                k++;
+            }
+        }
+        System.out.println(Arrays.toString(prime10));
+
     }
     public static boolean checkprime(int num){
         if (num<2){
