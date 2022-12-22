@@ -22,15 +22,24 @@ public class WhichSignIsYours {
                         System.out.println("Your b-day month is January!");
                         System.out.println("Please write a day of birth.");
                         int day = scn2.nextInt();
-                        if (day >= 1 && day <= 19) {
-                            System.out.println("Your sign is Capricorn!");
-                        } else if (day >= 20 && day <= 31) {
-                            System.out.println("Your sign is Aquarius!");
-                        } else {
-                            System.out.println("Wrong day, try again!");
-                        }
-                        isTrue = false;
+                        while (isTrue) {
+                            if (day < 1 || day > 31) {
+                                System.out.println("Please write a day of birth again.");
+                                day = scn2.nextInt();
+                            } else {
+                                if (day >= 1 && day <= 19) {
+                                    System.out.println("Your sign is Capricorn!");
+                                } else if (day >= 20 && day <= 31) {
+                                    System.out.println("Your sign is Aquarius!");
+                                } else {
+                                    System.out.println("Wrong day, try again!");
+                                }
+                                isTrue = false;
+                            }
+
+                            }
                         break;
+
                     case "February":
                         System.out.println("Your b-day month is February!");
                         System.out.println("Please write a day of birth.");

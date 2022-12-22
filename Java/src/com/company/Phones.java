@@ -10,6 +10,11 @@ public class Phones {
         PhonesDemo2 phone4 = new PhonesDemo2();
         PhonesDemo2 phone5 = new PhonesDemo2("X10", 499, 64, "White");
         PhonesDemo2 phone6 = new PhonesDemo2("5566");
+        PhonesDemo3 phone7 = new PhonesDemo3();
+        PhonesDemo3 phone8 = new PhonesDemo3("Android Kitkat", "Intel");
+        PhonesDemo3 phone9 = new PhonesDemo3("X14", 250, "Brown", "Android", "Intel");
+        phone7.cpu= "Intelcore";
+        phone7.systems = "Android lollipop";
 
         phone4.model ="LG";
         phone4.price = 850;
@@ -29,5 +34,7 @@ public class Phones {
         System.out.println(phone3.model+ " "+ phone3.price + " " + phone3.memory);
         System.out.println(phone4.model+ " "+ phone4.price + " " + phone4.memory+ " "+phone4.color);
         System.out.println(phone5.model+ " "+ phone5.price + " " + phone5.memory+ " "+phone5.color);
+        System.out.println(phone7.systems+ " "+ phone7.cpu);
+        System.out.println(phone9.model+ " "+ phone9.price+ " "+ phone9.color+ " "+ phone9.systems+ " "+ phone9.cpu);
     }
 }
