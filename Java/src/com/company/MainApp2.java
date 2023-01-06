@@ -31,13 +31,14 @@ public class MainApp2 extends JFrame{
         group.add(radio2);
         Font myfont = new Font("Serif", Font.BOLD, 20);
         label.setFont(myfont);
-        label.setForeground(Color.red);
+        label.setForeground(Color.white);
 
         radio1.setSelected(true);
         container.add(radio1);
         container.add(radio2);
         container.add(check);
 
+        input.addActionListener(new ButtonEventListener());
         button.setMnemonic(KeyEvent.VK_ENTER);
         button.addActionListener(new ButtonEventListener());
         container.add(button);
